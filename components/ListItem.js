@@ -3,14 +3,17 @@ import { StyleSheet, Image,Text, View } from 'react-native';
 
 
 const ListeItem = ({imageUrl,title,author}) => {
+
     return (
         <View style={styles.ItemContainer}>      
     
             <View style={styles.leftContainer}>      
+                {!!imageUrl && (
                 <Image 
                 style={{width:100,height:100}}
                 source={{uri:imageUrl}}
                 />  
+                )}
             </View>
             <View style={styles.rightContainer}>        
                 <Text numberOfLines={3} style={styles.text}>{title}</Text>
