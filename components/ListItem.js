@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Image,Text, View } from 'react-native';
+import { StyleSheet, Image,Text, View,TouchableOpacity } from 'react-native';
+ 
 
 
-const ListeItem = ({imageUrl,title,author}) => {
+const ListeItem = ({imageUrl,title,author,onPress}) => {
 
     return (
-        <View style={styles.ItemContainer}>      
-    
+        <TouchableOpacity style={styles.ItemContainer} onPress={onPress}>      
             <View style={styles.leftContainer}>      
                 {!!imageUrl && (
                 <Image 
@@ -20,7 +20,7 @@ const ListeItem = ({imageUrl,title,author}) => {
                 <Text style={styles.subText}>{author}</Text>
                 <StatusBar style="auto" />
             </View>                
-        </View>                
+        </TouchableOpacity>                
     );
   }
 
