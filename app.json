@@ -18,19 +18,24 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.sumito.udemy.newsapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.sumito.udemy.newsapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "extra":{
-      "newsApiKey" : "820fc83b8f8d40f2b0b3da3ae1ed0b76"
+    "extra": {
+      "newsApiKey": "820fc83b8f8d40f2b0b3da3ae1ed0b76",
+      "eas": {
+        "projectId": "b3facb3c-0cc5-4ac2-944d-3cb98cbabd13"
+      }
     }
   }
 }
