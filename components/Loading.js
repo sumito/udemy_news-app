@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
 });
 
 
-const Loading = () => {
+export const Loading = () => {
     return(
         <View sytle={styles.container}>
             <ActivityIndicator size="large"  />
@@ -23,4 +23,3 @@ const Loading = () => {
     )
 }
 
-export default Loading;
